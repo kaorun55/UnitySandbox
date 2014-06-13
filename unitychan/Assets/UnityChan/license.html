@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generated-by" content="Markdown PRO, http://markdownpro.com"/>
+<title></title>
+<style type="text/css">
+html,body{margin:0;padding:0;}
+body {padding: 20px}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;font-size:100%;line-height:1;font-family:inherit;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+q:before,q:after,blockquote:before,blockquote:after{content:"";}
+html{overflow-y:scroll;font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block;}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1;}
+audio:not([controls]){display:none;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup{top:-0.5em;}
+sub{bottom:-0.25em;}
+img{border:0;-ms-interpolation-mode:bicubic;}
+button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle;}
+button,input{line-height:normal;*overflow:visible;}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;}
+input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
+textarea{overflow:auto;vertical-align:top;}
+html,body{background-color:#ffffff;}
+body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:18px;color:#404040;}
+.container{width:940px;margin-left:auto;margin-right:auto;zoom:1;}.container:before,.container:after{display:table;content:"";zoom:1;*display:inline;}
+.container:after{clear:both;}
+.container-fluid{position:relative;min-width:940px;padding-left:20px;padding-right:20px;zoom:1;}.container-fluid:before,.container-fluid:after{display:table;content:"";zoom:1;*display:inline;}
+.container-fluid:after{clear:both;}
+.container-fluid>.sidebar{float:left;width:220px;}
+.container-fluid>.content{margin-left:240px;}
+a{color:#0069d6;text-decoration:none;line-height:inherit;font-weight:inherit;}a:hover{color:#00438a;text-decoration:underline;}
+.pull-right{float:right;}
+.pull-left{float:left;}
+.hide{display:none;}
+.show{display:block;}
+.row{zoom:1;margin-left:-20px;}.row:before,.row:after{display:table;content:"";zoom:1;*display:inline;}
+.row:after{clear:both;}
+p{font-size:13px;font-weight:normal;line-height:18px;margin-bottom:9px;}p small{font-size:11px;color:#bfbfbf;}
+h1,h2,h3,h4,h5,h6{font-weight:bold;color:#404040;}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small{color:#bfbfbf;}
+h1{margin-bottom:18px;font-size:30px;line-height:36px;}h1 small{font-size:18px;}
+h2{font-size:24px;line-height:36px;}h2 small{font-size:14px;}
+h3,h4,h5,h6{line-height:36px;}
+h3{font-size:18px;}h3 small{font-size:14px;}
+h4{font-size:16px;}h4 small{font-size:12px;}
+h5{font-size:14px;}
+h6{font-size:13px;color:#bfbfbf;text-transform:uppercase;}
+ul,ol{margin:0 0 18px 25px;}
+ul ul,ul ol,ol ol,ol ul{margin-bottom:0;}
+ul{list-style:disc;}
+ol{list-style:decimal;}
+li{line-height:18px;color:#808080;}
+ul.unstyled{list-style:none;margin-left:0;}
+dl{margin-bottom:18px;}dl dt,dl dd{line-height:18px;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:9px;}
+hr{margin:20px 0 19px;border:0;border-bottom:1px solid #eee;}
+strong{font-style:inherit;font-weight:bold;}
+em{font-style:italic;font-weight:inherit;line-height:inherit;}
+.muted{color:#bfbfbf;}
+blockquote{margin-bottom:18px;border-left:5px solid #eee;padding-left:15px;}blockquote p{font-size:14px;font-weight:300;line-height:18px;margin-bottom:0;}
+blockquote small{display:block;font-size:12px;font-weight:300;line-height:18px;color:#bfbfbf;}blockquote small:before{content:'\2014 \00A0';}
+address{display:block;line-height:18px;margin-bottom:18px;}
+code,pre{padding:0 3px 2px;font-family:Monaco, Andale Mono, Courier New, monospace;font-size:12px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+code{padding:1px 3px;}
+pre{background-color:#f5f5f5;display:block;padding:8.5px;margin:0 0 18px;line-height:18px;font-size:12px;border:1px solid #ccc;border:1px solid rgba(0, 0, 0, 0.15);-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;white-space:pre;white-space:pre-wrap;word-wrap:break-word;}
+form{margin-bottom:18px;}
+fieldset{margin-bottom:18px;padding-top:18px;}fieldset legend{display:block;padding-left:150px;font-size:19.5px;line-height:1;color:#404040;*padding:0 0 5px 145px;*line-height:1.5;}
+form .clearfix{margin-bottom:18px;zoom:1;}form .clearfix:before,form .clearfix:after{display:table;content:"";zoom:1;*display:inline;}
+form .clearfix:after{clear:both;}
+label,input,select,textarea{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;font-weight:normal;line-height:normal;}
+label{padding-top:6px;font-size:13px;line-height:18px;float:left;width:130px;text-align:right;color:#404040;}
+form .input{margin-left:150px;}
+input[type=checkbox],input[type=radio]{cursor:pointer;}
+input,textarea,select,.uneditable-input{display:inline-block;width:210px;height:18px;padding:4px;font-size:13px;line-height:18px;color:#808080;border:1px solid #ccc;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+input[type=checkbox],input[type=radio]{width:auto;height:auto;padding:0;margin:3px 0;*margin-top:0;line-height:normal;border:none;}
+input[type=file]{background-color:#ffffff;padding:initial;border:initial;line-height:initial;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+input[type=button],input[type=reset],input[type=submit]{width:auto;height:auto;}
+select,input[type=file]{height:27px;line-height:27px;*margin-top:4px;}
+select[multiple]{height:inherit;}
+textarea{height:auto;}
+.uneditable-input{background-color:#ffffff;display:block;border-color:#eee;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.025);cursor:not-allowed;}
+:-moz-placeholder{color:#bfbfbf;}
+::-webkit-input-placeholder{color:#bfbfbf;}
+input,textarea{-webkit-transition:border linear 0.2s,box-shadow linear 0.2s;-moz-transition:border linear 0.2s,box-shadow linear 0.2s;-ms-transition:border linear 0.2s,box-shadow linear 0.2s;-o-transition:border linear 0.2s,box-shadow linear 0.2s;transition:border linear 0.2s,box-shadow linear 0.2s;-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1);}
+input:focus,textarea:focus{outline:0;border-color:rgba(82, 168, 236, 0.8);-webkit-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);-moz-box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);}
+input[type=file]:focus,input[type=checkbox]:focus,select:focus{-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;outline:1px dotted #666;}
+form div.clearfix.error{background:#fae5e3;padding:10px 0;margin:-10px 0 10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}form div.clearfix.error>label,form div.clearfix.error span.help-inline,form div.clearfix.error span.help-block{color:#9d261d;}
+form div.clearfix.error input,form div.clearfix.error textarea{border-color:#c87872;-webkit-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);-moz-box-shadow:0 0 3px rgba(171, 41, 32, 0.25);box-shadow:0 0 3px rgba(171, 41, 32, 0.25);}form div.clearfix.error input:focus,form div.clearfix.error textarea:focus{border-color:#b9554d;-webkit-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);-moz-box-shadow:0 0 6px rgba(171, 41, 32, 0.5);box-shadow:0 0 6px rgba(171, 41, 32, 0.5);}
+form div.clearfix.error .input-prepend span.add-on,form div.clearfix.error .input-append span.add-on{background:#f4c8c5;border-color:#c87872;color:#b9554d;}
+table{width:100%;margin-bottom:18px;padding:0;border-collapse:separate;*border-collapse:collapse;font-size:13px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}table th,table td{padding:10px 10px 9px;line-height:18px;text-align:left;}
+table th{padding-top:9px;font-weight:bold;vertical-align:middle;border-bottom:1px solid #ddd;}
+table td{vertical-align:top;}
+table th+th,table td+td{border-left:1px solid #ddd;}
+table tr+tr td{border-top:1px solid #ddd;}
+table tbody tr:first-child td:first-child{-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0 0;border-radius:4px 0 0 0;}
+table tbody tr:first-child td:last-child{-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0;}
+table tbody tr:last-child td:first-child{-webkit-border-radius:0 0 0 4px;-moz-border-radius:0 0 0 4px;border-radius:0 0 0 4px;}
+table tbody tr:last-child td:last-child{-webkit-border-radius:0 0 4px 0;-moz-border-radius:0 0 4px 0;border-radius:0 0 4px 0;}
+.zebra-striped tbody tr:nth-child(odd) td{background-color:#f9f9f9;}
+.zebra-striped tbody tr:hover td{background-color:#f5f5f5;}
+.zebra-striped .header{cursor:pointer;}.zebra-striped .header:after{content:"";float:right;margin-top:7px;border-width:0 4px 4px;border-style:solid;border-color:#000 transparent;visibility:hidden;}
+.zebra-striped .header:hover:after{visibility:visible;}
+footer{margin-top:17px;padding-top:17px;border-top:1px solid #eee;}
+.page-header{margin-bottom:17px;border-bottom:1px solid #ddd;-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);-moz-box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);box-shadow:0 1px 0 rgba(255, 255, 255, 0.5);}.page-header h1{margin-bottom:8px;}
+.close{float:right;color:#000000;font-size:20px;font-weight:bold;line-height:13.5px;text-shadow:0 1px 0 #ffffff;filter:alpha(opacity=20);-khtml-opacity:0.2;-moz-opacity:0.2;opacity:0.2;}.close:hover{color:#000000;text-decoration:none;filter:alpha(opacity=40);-khtml-opacity:0.4;-moz-opacity:0.4;opacity:0.4;}
+
+pre {
+	padding: 0;
+	margin: 10px 0px 10px;
+	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+}
+pre code {
+	margin: 5px;  /*--Left Margin--*/
+	padding: 0px;
+	display: block;
+    line-height: 18px;
+}
+.center { text-align:center}
+.left {text-align:left}
+.right {text-align:right}
+
+</style><style type="text/css">
+
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", verdana, geneva, sans-serif;
+	word-spacing: 1px;
+	color: #444;
+	margin: 0px 5px;
+	line-height: 18px;
+}
+
+pre {
+	border: 1px solid #999;
+	/*padding:5px;*/
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	background: #eee;
+}
+
+code {
+	background: #eee;
+	/*padding: 0px 4px 0px;*/
+}
+
+p {
+	margin: 15px 0;
+	line-height: 18px;
+}
+
+h1 {
+	color: #444;	
+
+	padding-bottom: 5px;
+}
+
+h2 {
+	font: 24px Arial;
+	color: #79B933;
+	
+}
+
+h2 a {
+	color: #79B933;
+	text-decoration: none;
+}
+
+h2 a:hover {
+	color: #5F9128;
+}
+
+a {
+	color: #339966;
+}
+
+a:hover {
+	color: #339966;
+	text-decoration: underline;
+}
+
+h3 {
+	font: 140% Trebuchet MS;
+	margin: 10px 0;
+}
+
+ul {
+	margin: 15px 0 15px 0;
+	line-height: 25px;
+	padding: 15px 0 15px 15px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	color: #79B933;
+}
+
+img {
+	padding: 1px;
+	background: #ccc;
+	border: 4px solid #f6f6f6;
+}
+
+p img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+blockquote p {
+	font: 15px Georgia;
+	color: #aaa;
+	padding: 0 10% 0 0;
+	line-height: 26px;
+	letter-spacing: 0px;
+}
+</style></head>
+<body>
+<p><a href="http://unity-chan.com/download/guideline_en.html">GUIDELINE</a><br>
+<a href="http://unity-chan.com/download/license_en.html">LICENSE</a></p>
+
+<h1>License</h1>
+
+<p>The terms and conditions of the “Unity-Chan” license stated herein (“License”) stipulate the scope of use of the characters to which the rights are held by Unity Technologies Japan G.K. (“Company”), said scope exceeding the scope permitted under the current Copyright Act, and the terms and conditions of such use of the Character, in relation to users who wish to conduct secondary creative activities using such character regardless of whether or not compensation is received.<br>
+Regardless of whether or not compensation is received, users who wish to conduct secondary creative activities by using our characters shall be deemed to have consented to and agreed to be bound by this License without any reservation or adding other incidental conditions by starting to use the our characters.<br>
+All users who wish to publish any secondary work of our characters or any secondary work of the digital asset data of our characters are requested to indicate the licensed logo determined separately in a reasonable manner that can be easily seen (e.g., by indicating it on such secondary Work or attaching an explanation thereof to such secondary work).</p>
+
+<h2>Article 1. Definition</h2>
+
+<p>1.1 As used in this License, the following terms shall have the meanings set forth below:<br>
+(1)“Character” means a work of art that is created to embody an abstract idea that is named and otherwise characterized by voice, appearance, personality, world view, and others.<br>
+(2) “Unity Character(s)” means each Character or all of the Characters, the rights in and to which are owned by the Company, and which are the subject matters of this License. In addition to Unity-Chan (Kohaku Ootori), the Unity Characters include the Characters published in the booklet “Unity-Chan! Art Log” and the Characters to be published in the “unity-chan! Official HP (<a href="http://unity-chan.com)%E2%80%9D">http://unity-chan.com)”</a>.<br>
+(3)“Digital Asset Data of Unity Characters” means a set of model data of Unity Characters (including 3D models, material data with a shader, animation data, and voice data) and each or all of the digital data including pictures of images of the Unity Character, designs, logos, and others, which are the subject of this License.<br>
+(4)“Derivative Work” means any work that is created by translating, arranging, or transforming, or dramatizing, making a movie version of, or otherwise adapting a pre-existing work.<br>
+(5) “Modified Work” means any work created by changing, cutting, or otherwise modifying a pre-existing work, which does not fall under a Derivative Work.
+(6)“Secondary Work” collectively means any Modified Work, Derivative Work, and other work created based on a pre-existing work.<br>
+(7) “User” means any person who uses the whole or a part of the Unity Characters and the Digital Asset Data of Unity Characters (including the Secondary Creations thereof).<br>
+1.2 The Copyright Act (Act No. 48 of 1970) shall apply to the meaning and interpretation of other terms, unless otherwise provided for in this License.
+1.3 In addition to the terms and conditions of this License, other matters necessary for use of the Unity Characters are provided for in the Character Use Guidelines established separately (“Guidelines”) and both this License and the Guidelines shall apply to the use of the Unity Characters. If there is a conflict between any provision of this License and the Guidelines, the provision of the latter shall prevail.  </p>
+
+<h2>Article 2. Relationship between the Copyright Act and Other Applicable Laws</h2>
+
+<p>2.1The Unity Characters and the Digital Asset Data of Unity Characters are protected by the Copyright Act and other applicable laws and regulations.<br>
+2.2None of the provisions of this License prevent Users from using the Unity Characters as generally approved under the Copyright Act and other applicable laws and regulations.<br>
+2.3The Company exclusively owns copyrights in and to the Modified Work of the Unity Characters.<br>
+2.4With regard to use of the Derivative Work of the Unity Characters, the Company exclusively owns the same kind of rights specified in Articles 21 through 27 of the Copyright Act as owned by the author of such Derivative Work, pursuant to Article 28 of the same Act.  </p>
+
+<h2>Article 3. Grant of License; Conditions of Use</h2>
+
+<p>3.1 The Company grants to each User a non-exclusive license to conduct the following by such User him/herself, utilizing the Unity Character and the Digital Asset Data of Unity Characters, in accordance with each provision of this License and the Guidelines:<br>
+(1) Creation of the Derivative Work of the Unity Characters; Creation of the Secondary Work utilizing the Digital Asset Data of Unity Characters, including without limitation, games and interactive contents.<br>
+(2) Stage Performance, screen presentation, public transmission, exhibition, or distribution by Users of the Secondary Work of the Unity Characters created by such Users (“Distribution, etc.”).<br>
+(3) Distribution, etc. of the Digital Asset Data of Unity Characters and the Secondary Work thereof by a User him/herself, on condition that third parties who receive the same agree to be bound by this License.<br>
+(4) Using all or part of the names of the Unity Characters in the titles, explanations, etc. of the Secondary Work set forth in Items (2) and (3) above created by the User himself/herself, or giving a unique title to such Secondary Work using a part of the name of the Unity Characters.<br>
+3.2 With regard to the use set forth in Article 3.1 above, Users shall comply with each of the following conditions of use:<br>
+(1) In conducting the Distribution, etc. of the Digital Asset Data of Unity Characters and the Secondary Work thereof to third parties, a User shall cause such third parties to be bound by this License.<br>
+(2) Users may not use the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof for any act or purpose against public policy or for any antisocial act or purpose, or for any remark that is prejudiced religiously or politically.<br>
+(3) Users may not harm the honor and dignity of the Unity Characters, the Secondary Work thereof, the Company, and the products and services provided by the Company.<br>
+(4) Users may neither conduct any act that impairs the intellectual property rights of a third party, nor use the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof for the purpose of impairing such rights.<br>
+(5) Users may not use the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof as adult contents or services for commercial purposes, or for advertising and promotion.<br>
+(6) Unless otherwise approved by the Company, Users may not indicate or use any of their work in a manner that may mislead the public to believe that such work is an official product of the Company.<br>
+(7) Users shall comply with the conditions provided for in the Guidelines.<br>
+(8) In addition to the above, Users may not use the Unity Characters, the Digital Asset Data of Unity Characters and the Secondary Work thereof in a manner that the Company deems inappropriate.<br>
+3.3 When Users utilize the Unity Characters and the Digital Asset Data of Unity Characters as approved in Paragraph 3.1 above, Users are requested to indicate the licensed logo determined separately on the Secondary Work in a reasonable manner that can be easily seen (e.g., by indicating it on the Secondary Work or attaching an explanation thereof to the Secondary Work).<br>
+3.4 Users may not exercise their moral rights against the Company or its licensees.  </p>
+
+<h2>Article 4. Disclaimer of Warranty</h2>
+
+<p>4.1 The Unity Characters and the Digital Asset Data of Unity Characters shall be provided “as is” and the Company makes no warranty, including without limitation, any warranty of fitness for a particular purpose or non-infringement of a third party’s right.<br>
+4.2 The Company will not indemnify Users for damage and harm suffered by Users as a result of use of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof by Users. If any third party suffers damage as a result of use of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof by any User, such User shall be responsible for such damage and liable for the compensation thereof, and the Company will not be liable for such damage.  </p>
+
+<h2>Article 5. Amendment of this License</h2>
+
+<p>The Company may update this License if it determines it is necessary and will post the updated License as well as other information on the Company’s website or at other places. Users are requested to periodically visit the Company’s website and check as to whether there is a modification in any of the provisions of this License. Regardless of whether Users have confirmed any modification, a User shall be deemed to have agreed to the modified License when such User starts or continues to use the Unity Characters, the Digital Asset Data of Unity Characters, or the Secondary Work thereof.  </p>
+
+<h2>Article 6. Termination of License</h2>
+
+<p>6.1 If a User of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof is in violation of any of the provisions of this License, then, the license granted to such User shall automatically terminate.<br>
+6.2 The Company may, at its sole discretion, discontinue the use of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof by the Users at any time. The Company may also at any time discontinue the use of the Digital Asset Data of Unity Characters or the Secondary Work thereof which are already downloaded.<br>
+6.3 Upon receipt of notice of termination of the License or that the use of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof must be discontinued, Users shall be obligated and liable to (i) promptly discontinue the Distribution, etc. of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof, (ii) immediately delete the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work thereof from the computer and any other media storing the same, and (iii) at their expense, collect or cause third parties to delete the Unity Characters, the Digital Asset Data of Unity Characters and the Secondary Work which Distribution, etc. have already been conducted.<br>
+6.4 The Company shall not be liable for any damage suffered by Users as a result of discontinuation of use of the Unity Characters, the Digital Asset Data of Unity Characters, and the Secondary Work under this License.  </p>
+
+<h2>Article 7. Governing Law</h2>
+
+<p>7.1 This License shall be governed by the laws of Japan and the application of the United Nations Convention on Contracts for the International Sale of Goods is expressly disclaimed, even though the goods are sold in relation to this License.<br>
+7.2 Even if any provision or a part of such provision is held to be invalid or unenforceable pursuant to the Consumer Contract Act or other laws or regulations, the other provisions of this License or the remainder of the provision, when a part thereof is held to be invalid or unenforceable, shall continue in full force and effect and any provision that is held to be invalid or unenforceable shall be amended so that it will have the closest legitimate meaning to the original provision.  </p>
+
+<h2>Article 8. Jurisdiction</h2>
+
+<p>8.1 The Tokyo District Court shall have exclusive jurisdiction over any dispute arising out of or in connection with this License.<br>
+8.2 Notwithstanding the above, Users agree that the Company is entitled to injunctive relief (or equivalent urgent legal relief) in any jurisdiction.</p>
+
+<h2>Article 9. Miscellaneous</h2>
+
+<p>9.1 This License is prepared in Japanese. Any translation of this License into other languages is for the purposes of reference only and the Japanese version shall prevail over any translation thereof if there is a conflict between the Japanese version and such translation.<br>
+9.2 The Company reserves all rights not expressly granted to Users hereunder.<br>
+9.3 If it is likely that a User is in violation of this License or is infringing on any right, which is reserved by the Company pursuant to Article 9.2 above and is not granted to such User by this License, the Company may warn the User about such violation by e-mail or other communication means. If the Company receives no answer from such User within fifteen (15) days from the receipt of such notice, then, the User shall be deemed to be in violation of this License.<br>
+9.4 In cases where the Company gives a User the approval to use the Unity Characters, the Digital Asset Data of Unity Characters or any Secondary Work thereof beyond the scope of use specified in this License and the Guidelines, the Company shall separately prepare and provide a document granting such approval to such User, which shall be signed by the Company’s Business Execution Partner (shokumu shikkousha).  </p>
+
+<hr>
+
+<h1>Guidline</h1>
+
+<h2>[Character Use Guidelines]</h2>
+
+<p>These Guidelines describe, by giving examples, what users who wish to conduct their secondary creative activities with or without compensation “can do” and “cannot do” with regard to the characters (“Unity Characters”) in and to which the rights are owned by Unity Technologies Japan G.K. (“Company”) in accordance with the separately determined Unity-Chan License Terms and Conditions (“License”).<br>
+Please read these Guidelines without fail before publishing any secondary work that
+uses the Unity Characters.  </p>
+
+<h2>[Characters subject to these Guidelines]</h2>
+
+<p>The Unity Characters include “Unity-Chan” (Kohaku Ootori) as well as the group of characters published in the booklet “Unity-Chan! Art Log,” and the group of characters to be published in the “unity-chan! Official Website”(<a href="http://unity-chan.com">http://unity-chan.com</a>).  </p>
+
+<h2>[Unity-Chan License Terms and Conditions]</h2>
+
+<p>We, Unity Technologies, are an organization established to democratize the “game development know-how,” which has been accumulated only by leading studios until recently. We are most motivated by a desire to “allow every user to enjoy the fun and the magnificence of game making”, and now, we expand the scope, with regard only to the Unity Characters, beyond game development and have established new license terms and conditions in order to expand the scope of secondary use of work, which is principally allowed but in a very limited scope under the current Copyright Act of Japan, so that “Unity-Chan” may be published to the users who are usually devoted in creative activities other than game development . The License is established for such purposes.<br>
+The License is established to declare that we will grant widely to users a license to use the Unity Characters and the digital asset data of Unity Characters for users’ secondary creative activities.<br>
+By using the Unity Characters, any user who wishes to conduct secondary creative activities using the Unity Characters with or without compensation shall be deemed to have consented to and agreed to be bound by the License and these Guidelines without any reservation or adding other incidental conditions.  </p>
+
+<p>“Unity-Chan” License Terms and Conditions (<a href="http://unity-chan.com/download/license_en.html">HTML</a>)<br>
+“Unity-Chan” License Terms and Conditions Summary Version (<a href="http://unity-chan.com/download/license_sum_en.html">HTML</a>)</p>
+
+<h2>[License notice]</h2>
+
+<p>All users who wish to publish any secondary work are requested to indicate the licensed logo below in a reasonable manner that can be easily seen (e.g., by indicating it on or attaching an explanation thereof to such secondary work).</p>
+
+<p>About License (<a href="http://unity-chan.com/download/license_sig_en.html">HTML</a>)<br>
+About License Logo (<a href="http://unity-chan.com/download/pdf/LUUL_logo-guideline_en.pdf">PDF</a>)  </p>
+
+<ul>
+<li>You can download License Logo images from Data Download page.</li>
+</ul>
+
+<p>for example,</p>
+
+<pre><code>&lt;div&gt;&lt;img src=&quot;http://unity-chan.com/images/imageLicenseLogo.png&quot; alt=&quot;Unity-Chan License&quot;&gt;&lt;p&gt;These contents are licensed under the &lt;a href=&quot;http://unity-chan.com/download/license_en.html&quot; target=&quot;_blank&quot;&gt;“Unity-Chan” License Terms and Conditions&lt;/a&gt;. You are allowed to use these contents only if you follow the &lt;a href=&quot;http://unity-chan.com/download/guideline_en.html&quot; target=&quot;_blank&quot;&gt;Character Use Guidelines&lt;/a&gt; set by Unity Technologies Japan G.K., for the usage of its characters.&lt;/p&gt;&lt;/div&gt;
+</code></pre>
+
+<p>Please note that, if a user publishes any secondary work without the above license notice, such user shall be deemed to be in violation of the License in principle.
+If a user wishes to display any notice of their rights other than the license notice in accordance with this License on such secondary work, whether for-profit or not-for-profit, such user is requested to obtain approval to indicate that the secondary work is an “official product using the Unity Characters”. In such event, please contact the Company for details. The Company will examine in detail and determine as to whether it is possible to grant a license in each case, and may conclude another agreement, if necessary.</p>
+
+<h2>[Use permitted and not permitted under the License]</h2>
+
+<h3>A.Use not permitted in principle</h3>
+
+<p>Users may not use the Unity Characters for the following purposes, whether for- profit or not-for-profit:
+Use of the Unity Characters for any act or purpose against public policy or for any antisocial act or purpose, or for any remark that is prejudiced religiously or politically;
+Use of the Unity Characters for harming the honor and dignity of the Unity Characters, the Company, and products and services provided by the Company;
+Any act impairing the intellectual property rights or any other rights of a third party, or use for the purpose of impairing such rights;
+Unauthorized use of the Unity Characters in adult contents or services for commercial purposes, or for advertisement or promotion, etc.;
+Use in a manner that may mislead the public to believe that they are the official products of the Company, unless otherwise approved by the Company; or
+Users are strictly prohibited from the creation or any act beyond the scope of a small-scaled stage performance, screen presentation, public transmission, exhibit, or distribution ( “Distribution, etc.”) of the contents using the Unity Characters for the above acts or purposes.
+If such violation is verified, the Company will immediately instruct the user to cease using the Unity Characters. Upon the request by the Company, the user and the publisher or seller of the user shall be obliged to immediately cease the use, publishing, and selling, etc. of the relevant content. In addition, the Company will not be liable for any damage arising out of such requests.</p>
+
+<h3>B.Use by small-scaled fan (doujin) circles, etc.</h3>
+
+<p>The following examples of use shall be deemed as a use by a small-scaled fan circles, etc. within the scope of hobby use:
+Small-scaled exhibition and sale of fan magazines, games, figures, goods, and others ( “Fan Contents”) at a comic market, wonder festival, or each fan circle sale events held by the user himself/herself as an individual or a small-scaled fan circle ( “Fan Circle(s)”)of which such user is a member;
+Costume playing and photo session thereof, and exhibition and sale of costumes for non-profit purpose, at each fan event held by the Fan Circle itself; and
+Exhibition and sale of the Fan Contents by the Fan Circle itself through the Internet, mail order, auction, rental showcase, and others.
+If the contents do not fall under “A. Use not permitted in principle,” and if the user’s dignity as “creator” is maintained, the then applicable social norms shall be considered, and if the expressions are not extremely offensive to third parties, the Company shall give approval, pursuant to the License, to use the Unity Characters for the Fan Contents at the user’s own responsibility, and to publish and sell such contents at events and other occasions.
+In cases where a user uses the Unity Characters in the Fan Contents, such user as the author of the secondary work is requested to display the license notice determined separately by the Company in a reasonable manner that can be easily seen. The user as the author of the secondary work warrants that he/she will not exercise his/her moral rights against the Company or any person who is granted a license by the Company.
+Even if a user has complied with the above conditions, the Company may immediately order such user to cease using the Unity Character at its sole discretion. In such event, the user shall be obliged to immediately cease any and all acts upon request from the Company, including without limitation, publishing and sale of the relevant contents. The Company is not liable for any damage arising out of such request.
+The term Fan Circles, etc. used above means an individual or a circle, the annual sales for the previous year of which are equal to or less than ten (10) million yen. If any individual or circle having annual sales of more than ten (10) million yen wishes to use the Unity Characters, or if any secondary work using the Unity Character has gone beyond the scope or scale of hobby use or it is expected that the it will grow beyond such scope or scale, the user is requested to promptly notify the Company to that effect and obtain a license separately.</p>
+
+<h3>C.Reuse of the digital asset data included in the 3D model distribution archive of the Unity Characters</h3>
+
+<p>All of the digital asset data, including the mesh and texture, materials, shader, animation, and voice data, etc. included in the 3D model distribution archive of the Unity Characters is protected by the Copyright Act of Japan.
+The Company authorizes the following use based on the License for the purpose of personal amusement, research, and hobby use :
+Data outputting of the Unity Characters by means of remodeling, alteration, or 3D printing, etc.; or
+The user himself/herself creating and adding new digital asset data to his/her own games or digital contents by using a part of the digital asset data.
+In order for a user him/herself to conduct the Distribution, etc. of such digital asset data beyond the above purpose, such user is requested to give a third party who is going to use such digital asset data a notice clearly describing the distributor’s (user’s) contact information and that it is available on the condition that such third party agrees to be bound by this License, in a manner that can be easily seen by third parties, along with the explanation of the digital asset data subject to Distribution, etc. Please note that Distribution, etc. will not be allowed unless a third party agrees to be bound by this License. The user, as the author of the secondary work, warrants that he/she will not exercise his/her moral right against the Company or any person who is granted a license by the Company with regard to their use of such secondary work.</p>
+
+<h3>D.Use of the Unity Character data on Unity</h3>
+
+<p>Users may develop and create various applications on the game engine Unity ( “Unity”), using the 3D model data of the Unity Characters subject to Distribution, etc. in .unitypackage archive format and the 2D illustrations of the same published on the official website or otherwise.<br>
+Users may conduct Distribution, etc. of the applications created on Unity pursuant to the License and applicable license terms and conditions, regardless of whether the purpose is for commercial use or profit. Users may also conduct Distribution, etc. of the digital asset data of the Unity Characters or the secondary work thereof, if such secondary work is incorporated in the application created on Unity.<br>
+In cases where the digital asset data of the Unity Characters or the secondary work thereof are used on Unity at events such as game jams and seminars for educational purpose, users are allowed to publish or present the same in the state that it is incorporated in the Unity project, as well as in the application created on Unity.<br>
+When users conduct the Distribution, etc. of the digital asset data of the Unity Characters or the secondary work thereof in a state that it is incorporated in the Unity project, users are requested to attach the license notice file at a location in the project folder where it can be easily seen.<br>
+If a user applies to obtain an approval for an official product using the Unity Characters, such user is requested to contact the Company. The Company will examine in detail and determine as to whether it is possible to grant a license, and may conclude an agreement separately, if necessary.  </p>
+
+<ul>
+<li>If a user wishes to display any notice of its rights other than the license notice in accordance with the License on such secondary work, such user is requested to obtain approval for an “official product using the Unity Characters.”<br>
+###E.Use and Distribution, etc. of new digital assets created from the official design materials</li>
+</ul>
+
+<p>Users of the Unity Characters may independently create, use on his/her own Unity project, or conduct Distribution, etc. in the .unitypackage archive format the digital asset data created based on or referring to the official design materials published in the booklet “Unity-Chan! Art Log” and the “unity-chan!   official website” (<a href="http://unity-chan.com">http://unity-chan.com</a>) under the License.<br>
+These digital asset data includes the following:<br>
+3D models (including all of the characters, gadgets, and scenes);<br>
+2D images including character illustrations and textures;<br>
+Motion or animation data;<br>
+Effects;<br>
+Voice data including music and sound effects (SE); and
+Scene data.<br>
+When users conduct the Distribution, etc. of the above digital asset data created by themselves, users are requested to include the license notice in accordance with the License in the archive of such data and also post it at a location on the download site where it can be easily seen.<br>
+Users may also conduct the Distribution, etc. of the digital asset data created by themselves at the Asset Store provided by the Company. In such event, users are requested to agree to the latest “Asset Store Use Terms and Conditions and End User License Agreement” and “Asset Store Provider Agreement,” in addition to the indication of the license notice in accordance with the License.<br>
+Any third party other than the Company or any person to whom the Company granted a license is prohibited from the Distribution, etc. of the digital asset data created by another user, whether with or without compensation.  </p>
+
+<h3>F.Use and reproduction of the official images of the Unity Characters and publishing thereof on the Internet or otherwise</h3>
+
+<p>Users of the Characters may use the official images published on the “unity-chan! official website” (<a href="http://unity-chan.com">http://unity-chan.com</a>) for the purposes of personal amusement and hobby use, make reproductions thereof, and publish the same on the Internet or otherwise under the License.<br>
+In such event, users are requested as much as possible to post the license notice, at a location within the image or close to the image so that it can be easily seen.</p>
+
+<h3>G.Placing an order or request to create products or digital asset data using the Unity Characters with a third party</h3>
+
+<p>It is not necessary for users to report to or obtain approval of the Company before placing an order or request to create products or digital asset data using the Unity Characters with a third party such as another creator or a professional vendor for the following purposes under the License:<br>
+◯Placing an order or request to create products using the Unity Characters with a third party professional vendor for the purpose of use by the user him/herself, his/her family and friends.<br>
+Examples are as follows:<br>
+Request for outputting the official 3D data of the Unity Characters by a 3D printer;<br>
+Request for printing the official 2D illustration of the Unity Characters on stickers and stamps or otherwise; or<br>
+Request for creating clothing based on the official design of the Unity Characters for costume playing.<br>
+◯Placing an order for a production agency service to create digital asset data based on the official data and official design of the Unity Characters with another creator or a professional vendor for the purpose of using the same for games and digital contents created by the user him/herself.
+Examples are as follows:<br>
+Request for creating additional motion and animation data based on the official 3D data of the Unity Characters (including the motion retarget service on the Internet);<br>
+Request for creating new illustrations and pixel graphics or otherwise based on the official design of the Unity Characters for incorporating in games; or
+Request for creating new 3D model data of the Unity Characters or the model data of 3D SD characters based on the official design of the Unity Characters for incorporating in games.<br>
+When users publish the contents including such digital asset data or the digital asset data, users are requested to appropriately indicate the license notice in accordance with the License.<br>
+In addition, in placing an order, users are requested to pay attention to the following:<br>
+When placing an order for the purpose of making products or otherwise, in particular, if a user intends to use the illustrations of the Unity Characters that are not created by such user, it is necessary that the user asks for and obtains approval from the author of such illustrations without fail.
+If any malfunction or disadvantage occurs to the user and/or third parties involved as a result of placing an order, the Company shall not be liable for any such malfunction or disadvantage.</p>
+
+<h3>H.Matters that require the Company’s official supervision</h3>
+
+<p>If a company or organization exceeding the size of a Fan Circle wishes to sell the secondary work of the Unity Characters or use the same for advertising and promotion for commercial purposes or for a fee, such use requires a license from the Company, independently from the License, as well as an official supervision by the Company. Please contact the Company at the contact address below for details.<br>
+Even in the case of use by a company, if the scale of use by such company is generally accepted as the same as a small-scaled Fan Circle (production of prototypes, technology demonstration models, and others), the company may use the Unity Characters under the License. In such event, the company is requested to display the logo of the License so that it can be easily seen.<br>
+“Fan Circles” means any circle, the annual sales for the previous year of which are equal to or less than ten (10) million yen.  </p>
+
+<h3>I.Other use of the Unity Characters</h3>
+
+<p>If a user has inquiries about any use of the Unity Characters not included in A through H above or is not sure about the case under which his/her use falls, please contact the Company. The Company will examine in detail and determine as to whether it is possible to grant a license in each case, and may conclude an agreement, if necessary.</p>
+
+<h3>J.Others</h3>
+
+<p>The Company may revise these Guidelines from time to time. Users are requested to confirm these Guidelines and to use the Unity Character within the scope specified in the latest Guidelines. The Company shall not be liable for any damage resulting from the revision of these Guidelines.<br>
+Contact Address for inquiries regarding the License and these Guidelines: 
+Unity Technologies Japan G.K.<br>
+<a href="mailto:unity-chan@unity3d.co.jp">unity-chan@unity3d.co.jp</a></p>
+
+</body>
+</html>
