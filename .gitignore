@@ -11,3 +11,9 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+
+# Visual Studio 
+Debug
+Release
+bin
+ipch
