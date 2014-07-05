@@ -66,7 +66,6 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-    <None Include="Assets\UnityChan\Voice\unity-chan_voice_list.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets" />
@@ -81,7 +80,6 @@
     <Folder Include="Assets\UnityChan\Models" />
     <Folder Include="Assets\UnityChan\Models\UnityChanShader" />
     <Folder Include="Assets\UnityChan\Models\UnityChanShader\Shader" />
-    <Folder Include="Assets\UnityChan\Voice" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.UnityScript.targets" />
 </Project>

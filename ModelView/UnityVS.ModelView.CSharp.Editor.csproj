@@ -7,14 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{CA016474-FFA0-12EA-93C0-7C593735A47C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -61,6 +63,10 @@
       <Project>{2F7725A1-5BEC-8130-C584-484ADD704E3F}</Project>
       <Name>UnityVS.ModelView.CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="UnityVS.ModelView.CSharp.Plugins.csproj">
+      <Project>{A5F79D89-194D-74BB-6D36-44B44FC39762}</Project>
+      <Name>UnityVS.ModelView.CSharp.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityVS.ModelView.UnityScript.Plugins.unityproj">
       <Project>{23EEA994-A1DA-A651-62DA-95249769D5B3}</Project>
       <Name>UnityVS.ModelView.UnityScript.Plugins</Name>
@@ -90,7 +96,6 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-    <None Include="Assets\UnityChan\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
     <None Include="Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll" />

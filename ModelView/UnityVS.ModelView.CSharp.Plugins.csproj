@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2F7725A1-5BEC-8130-C584-484ADD704E3F}</ProjectGuid>
+    <ProjectGuid>{A5F79D89-194D-74BB-6D36-44B44FC39762}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace></RootNamespace>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
@@ -48,50 +48,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.ModelView.CSharp.Plugins.csproj">
-      <Project>{A5F79D89-194D-74BB-6D36-44B44FC39762}</Project>
-      <Name>UnityVS.ModelView.CSharp.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityVS.ModelView.UnityScript.Plugins.unityproj">
-      <Project>{23EEA994-A1DA-A651-62DA-95249769D5B3}</Project>
-      <Name>UnityVS.ModelView.UnityScript.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Kinect\Scripts\BodySourceManager.cs" />
-    <Compile Include="Assets\Kinect\Scripts\BodySourceView.cs" />
-    <Compile Include="Assets\Kinect\Scripts\ColorSourceManager.cs" />
-    <Compile Include="Assets\Kinect\Scripts\ColorSourceView.cs" />
-    <Compile Include="Assets\Kinect\Scripts\DepthSourceManager.cs" />
-    <Compile Include="Assets\Kinect\Scripts\DepthSourceView.cs" />
-    <Compile Include="Assets\Kinect\Scripts\DisableOnStart.cs" />
-    <Compile Include="Assets\Kinect\Scripts\InfraredSourceManager.cs" />
-    <Compile Include="Assets\Kinect\Scripts\InfraredSourceView.cs" />
-    <Compile Include="Assets\Kinect\Scripts\MultiSourceManager.cs" />
-    <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
-    <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRComponent.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRDistortionCamera.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRDistortionMesh.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRGridCube.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRMagCalibration.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRMessenger.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
-    <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
-    <Compile Include="Assets\Scripts\KinectModelContoller.cs" />
-    <Compile Include="Assets\UnityChan\FaceAnimation\FaceUpdate.cs" />
-    <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
-    <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+    <Compile Include="Assets\Standard Assets\Windows\Kinect\KinectWrapper.cs" />
+    <Compile Include="Assets\Standard Assets\Windows\Kinect\KinectWrapper.HandCoded.cs" />
     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
     <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_Mesh.shader" />

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ModelView.CSharp", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ModelView.CSharp.Editor", "UnityVS.ModelView.CSharp.Editor.csproj", "{CA016474-FFA0-12EA-93C0-7C593735A47C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.ModelView.CSharp.Plugins", "UnityVS.ModelView.CSharp.Plugins.csproj", "{A5F79D89-194D-74BB-6D36-44B44FC39762}"
+EndProject
 Project("{1FAC5C55-277D-4884-94A4-83DBDAF57E56}") = "UnityVS.ModelView.UnityScript.Plugins", "UnityVS.ModelView.UnityScript.Plugins.unityproj", "{23EEA994-A1DA-A651-62DA-95249769D5B3}"
 EndProject
 Global
@@ -21,6 +23,10 @@ Global
 		{CA016474-FFA0-12EA-93C0-7C593735A47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA016474-FFA0-12EA-93C0-7C593735A47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA016474-FFA0-12EA-93C0-7C593735A47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F79D89-194D-74BB-6D36-44B44FC39762}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F79D89-194D-74BB-6D36-44B44FC39762}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F79D89-194D-74BB-6D36-44B44FC39762}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F79D89-194D-74BB-6D36-44B44FC39762}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23EEA994-A1DA-A651-62DA-95249769D5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23EEA994-A1DA-A651-62DA-95249769D5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23EEA994-A1DA-A651-62DA-95249769D5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
