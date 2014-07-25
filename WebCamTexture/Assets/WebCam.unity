@@ -192,8 +192,8 @@ MonoBehaviour:
   Height: 1080
   FPS: 30
   Mirror: 1
-  RightUp: 0
-  LeftUp: 1
+  RightUp: 1
+  LeftUp: 0
 --- !u!23 &462515663
 Renderer:
   m_ObjectHideFlags: 0
